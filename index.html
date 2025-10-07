@@ -1,45 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Website</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to My Website</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <h1 class="site-title">My Name</h1>
+      <nav class="site-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Hello! I’m learning web development and hosting my first website on GitHub Pages 🚀</p>
-  </section>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Welcome to my site</h2>
+        <p>I build things. I write. I learn. This is where I share my work and thoughts.</p>
+      </div>
+    </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Project 1</h3>
-      <p>A short description of what this project does.</p>
-    </div>
-    <div class="card">
-      <h3>Project 2</h3>
-      <p>Another example project hosted on GitHub.</p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Find me on <a href="https://github.com/YOUR-USERNAME" target="_blank">GitHub</a>.</p>
-  </section>
+    <section class="entries container">
+      <article class="entry">
+        <h3><a href="#">Latest Project Title</a></h3>
+        <p>Short description of this project — what it does, technologies used, etc.</p>
+      </article>
+      <article class="entry">
+        <h3><a href="#">Another Project</a></h3>
+        <p>Another short description of another project.</p>
+      </article>
+      <!-- you can add more entries -->
+    </section>
+  </main>
 
   <footer>
-    <p>© 2025 Your Name. All rights reserved.</p>
+    <div class="container">
+      <p>© 2025 My Name. All rights reserved.</p>
+      <p>Find me on <a href="#">GitHub</a> / <a href="#">LinkedIn</a> / <a href="#">Other</a></p>
+    </div>
   </footer>
 </body>
 </html>
